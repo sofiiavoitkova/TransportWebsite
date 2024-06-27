@@ -1,0 +1,54 @@
+:root {
+  --ff-rubik: "Rubik", sans-serif;
+  --ff-oswald: "Oswald", sans-serif;
+
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --onyx: hsl(0, 0%, 24%);
+
+  --fs-1: 6rem;
+  --fs-2: 5rem;
+  --fs-3: 4rem;
+
+  --transition: 0.25s ease;
+}
+html {
+  font-family: var(--ff-rubik);
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--onyx);
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.h1 {
+  font-size: var(--fs-3);
+  text-transform: uppercase;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 15px;
+  z-index: 4;
+  transition: var(--transition);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  font-family: var(--ff-oswald);
+  /* color: var(--white); */
+  font-size: 3rem;
+}
